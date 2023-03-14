@@ -1,0 +1,17 @@
+﻿<Window x:Class="Учебка.Navigation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Учебка"
+        mc:Ignorable="d"
+        Title="Navigation" Height="382" Width="481">
+    <Grid Margin="0,0,0,3">
+        <Button Content="Заказы" HorizontalAlignment="Center" Margin="0,83,0,0" VerticalAlignment="Top" Height="27" Width="160" Click="Zakazy_Click"/>
+        <Button Content="Услуги" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Height="27" Width="160" Click="Uslugi_Click"/>
+        <Button Content="Документы" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" Height="27" Width="160" Click="Documenty_Click"/>
+        <Button Content="Клиенты" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="27" Width="160" Click="Clienty_Click"/>
+        <Label Content="Навигационная панель" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="Учебка.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Учебка"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="450">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Имя пользователя:" Margin="10" Grid.Row="0" FontSize="14"/>
+        <TextBox x:Name="UsernameTextBox" Margin="10" Grid.Row="1"/>
+
+        <TextBlock Text="Пароль:" Margin="10" Grid.Row="2" FontSize="14"/>
+        <PasswordBox x:Name="PasswordTextBox" Margin="10" Grid.Row="3"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,-13" Grid.Row="4" Width="160">
+            <Button x:Name="LoginButton" Content="Войти" Margin="5" Click="LoginButton_Click" Width="86"/>
+            <Button x:Name="CancelButton" Content="Отмена" Margin="5" Click="CancelButton_Click" Width="56"/>
+        </StackPanel>
+    </Grid>
+</Window>
